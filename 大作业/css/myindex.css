@@ -1,0 +1,107 @@
+
+/*盒子模型*/
+#head{
+	height: 150px;
+	width: 100%;
+	text-align: left;
+	margin-right: 50px;
+	margin-left: auto;
+}
+
+#container{
+	width: 100%;
+	height: 1000px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 20px;
+}
+
+#left{
+	
+	float: left;
+	height: 360px;
+	width: 10%;
+	margin-left: 5%;
+}
+
+#content{
+	
+	float: left;
+	width: 60%;
+	height: 100%;
+	margin-left: 5%;
+}
+
+#right{
+	
+	float: right;
+	height: 360px;
+	width: 15%;
+	margin-right: 5%;
+}
+
+#footer{
+	background-color: #308910;
+	clear: both;
+	height: 40px;
+	width: 760px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+
+
+
+
+/*菜单栏*/
+.nav ul{
+        width:980; 
+        list-style: none;
+        }
+.nav ul li{
+		float:left;//左浮动，让列表项变为横排
+        }
+
+.nav ul li a{
+                width:120px;
+                height:28px;
+                line-height:28px;/*//两个超练级间距*/
+                margin:5px 10px;/*//设计边距*/
+                text-align:center;
+                text-decoration:none;/*//取消超链接的下划线*/
+                display:block;/*//超链接以块级标签显示*/
+            }
+.nav ul li a:link{/*鼠标点击超链接时的状态*/
+                    width:120px;
+                    height:28px;
+                    line-height:28px;
+                }
+.nav ul li a:hover {/*鼠标点击超链接时的状态*/
+                    width:120px;
+                    height:28px;
+                    line-height:28px;
+                    }
+.nav ul li ul{
+                display:none;/*隐藏子列表的显示，这个属性必须给出*/
+
+                padding:0px;
+                margin:0px;
+            }
+.nav ul li ul li{
+                margin-left:10px;
+                float:none;/*/取消浮动，让列表标签竖排显示*/
+                padding:0px 0px 0px 0px;
+}
+.nav ul li ul li a{
+                width:120px;
+                height:28px;
+                text-align:center;
+                text-decoration:none;/*设置取消下划线*/
+                display:inline-block;/*将<a>转换为块级元素*/
+                margin:0px 0px 0px 0px;
+}
+.nav ul li:hover ul{/*鼠标经过时显示子标题，此属性也必须给出，不然鼠标经过时也不会显示子列表*/
+                    display:block;
+
+}

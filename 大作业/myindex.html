@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<title>myindex</title>
+
+
+	 <link rel="stylesheet" type="text/css" href="css/myindex.css">
+	 <link rel="stylesheet" type="text/css" href="css/body.css">
+
+	 <style type="text/css">
+
+	 body{
+ 		background-image: url(images/cloud.jpg);
+	 	background-repeat: no-repeat;
+	    background-size: cover;
+	    background-position: center;
+	    background-attachment: fixed;
+	    text-align: center;
+	    font-size: 1.5em;
+	    overflow: visible;
+    }   
+
+
+    #name{
+    	
+    	color: #11D7D1;
+    }
+   
+	 </style>
+</head>
+<body >
+	<!-- 音频播放 -->
+	<audio id="music">
+		<source src="song1.mp3" type="audio/mpeg">
+	</audio>
+	<script>
+		var audio = document.getElementById('music');
+
+		function set(){
+			if(audio.paused)
+			{
+				audio.paused=false;
+				audio.play();	
+			}
+		}
+		setInterval("set()",1);
+	</script>
+
+
+	
+
+	
+	<div id="head" >
+
+	 	<table>
+			<tr>
+				<td style="padding: 40px;" height="100px">
+					<div style="height: 100px">
+						<img src="images/dragon_128px_1224606_easyicon.net.ico" width="100px">
+					</div>
+					
+				</td>
+				
+				<td height="100px">
+					<p style="color: #11D7D1"> LHua's Blog </p>
+				</td>
+			
+				
+				<td width="80%" height="100px" >
+					<div class="nav" style="width: 100%;height: 70px;">
+						<ul style="position: absolute;">
+						
+							<li><a href="welcome.html"><p id="name">首页</p></a></li>
+							<li><a href="#"><p id="name">关于我</p></a></li>
+							<li><a href="#"><p id="name">下载</p></a>
+								<ul>
+								<li><a href="#"><p id="name">软件</p></a></li>
+								<li><a href="#"><p id="name">视频</p></a></li>
+								</ul>
+							</li>
+							<li><a href="#"><p id="name">留言板</p></a></li>
+							<li><a href="#"><p id="name">Nothing</p></a></li>
+						</ul>
+
+					</div>
+					
+				</td>
+				
+			</tr>
+		</table>
+	</div>
+    <div id="container">
+        <div id="left">
+        	<a href="http://www.baidu.com" target="abc">百度一下</a>
+        	<br>
+
+        	<a href="calendar4.html" target="abc">校历</a>
+
+        </div>
+
+
+        <div id="content">
+
+
+        	<iframe width="100%" height="100%" frameborder="0" name="abc"></iframe>
+        </div>
+
+
+
+        <div id="right">
+        	
+        	<img src="images/wechat.JPG" width="100%" height="100%">
+        	<img src="images/qq.JPG" width="100%" height="100%">
+
+
+        </div>
+    </div>
+<script src="./js/libs.js"></script>
+<script src="./js/functions.js"></script>
+</body>
+
+</html>
