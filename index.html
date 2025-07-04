@@ -1,11 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8" />
   <title>邀请函</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <style>
-    body {
+  <style>    body {
       font-family: "微软雅黑", Arial, sans-serif;
       background-color: #f9f9f9;
       text-align: center;
@@ -76,24 +76,25 @@
     .disagree-btn {
       background-color: #e74c3c;
       color: white;
-      width: 40%;
-      max-width: 150px;
+      width: 20%; /* 设置为“同意”按钮的一半宽度 */
+      max-width: 75px; /* 同意按钮最大 150px，这里一半是 75px */
       position: absolute;
       top: 0;
       left: 0;
     }
 
     @media screen and (max-width: 450px) {
-      .buttons button {
-        width: 45%;
+      .agree-btn,
+      .disagree-btn {
+        width: auto;
         font-size: 14px;
         padding: 8px 12px;
       }
-      h1 {
-        font-size: 20px;
+      .agree-btn {
+        max-width: 130px;
       }
-      p {
-        font-size: 14px;
+      .disagree-btn {
+        max-width: 65px;
       }
     }
   </style>
@@ -120,8 +121,7 @@
     </div>
   </div>
 
-  <script>
-    const encouragementMessages = [
+  <script>    const encouragementMessages = [
       "再考虑一下嘛～我们都准备好了 🥺",
       "别走呀，来吧，真的很好玩 😭",
       "你要是不来，我们会很伤心的 💔",
